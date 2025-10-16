@@ -1,0 +1,11 @@
+user-echo:
+    stage: build
+    script:
+        - echo "HELLO, $git@{user.name}"
+
+
+test-job:
+    stage: test
+    script: 
+        - echo "Ma pipeline se déroule sur la branche $CI_COMMIT_BRANCH"
+
