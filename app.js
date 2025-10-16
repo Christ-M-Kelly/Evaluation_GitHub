@@ -24,7 +24,7 @@ function renderBooks() {
     tr.appendChild(genreTd);
 
     const langTd = document.createElement("td");
-    langTd.textContent = book.lang;
+    langTd.textContent = book.language;
     tr.appendChild(langTd);
 
     const actionsTd = document.createElement("td");
