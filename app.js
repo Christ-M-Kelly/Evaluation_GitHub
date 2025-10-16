@@ -23,6 +23,10 @@ function renderBooks() {
     genreTd.textContent = book.Genre;
     tr.appendChild(genreTd);
 
+    const langTd = document.createElement("td");
+    langTd.textContent = book.lang;
+    tr.appendChild(langTd);
+
     const actionsTd = document.createElement("td");
 
     const editBtn = document.createElement("button");
