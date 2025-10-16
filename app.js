@@ -13,6 +13,16 @@ function renderBooks() {
     authorTd.textContent = book.author;
     tr.appendChild(authorTd);
 
+    // Colonne pour les actions (modifier)
+
+    const dateTd = document.createElement("td");
+    dateTd.textContent = book.Date;
+    tr.appendChild(dateTd);
+
+    const genreTd = document.createElement("td");
+    genreTd.textContent = book.Genre;
+    tr.appendChild(genreTd);
+
     const actionsTd = document.createElement("td");
 
     const editBtn = document.createElement("button");
